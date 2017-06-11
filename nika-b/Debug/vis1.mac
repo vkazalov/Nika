@@ -1,0 +1,121 @@
+/control/verbose 2
+/run/verbose 1
+#########################
+
+#Cd-109
+#/gps/position 0. 2.5 0. cm
+#/gps/direction 0 -1 0
+#/gps/ene/type Gauss
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 48 109 0  0
+#Cs-137
+#/gps/position 0. 2.5 0. cm
+#/gps/direction 0 -1 0
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 55 137 0  0
+#
+#C-14
+#/gps/position 0 -2.5 0 cm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 4.66 cm
+#/gps/pos/halfz 10.3 cm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 6 14 0  0
+#Bi-214
+#/gps/position 0 -2.5 0 cm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 4.66 cm
+#/gps/pos/halfz 10.3 cm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 83 214 0  0
+#Rn-222
+#/gps/position 0 -2.5 0 cm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 4.66 cm
+#/gps/pos/halfz 10.3 cm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 86 222 0  0
+#Po-218
+#/gps/position 0 -2.5 0 cm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 4.66 cm
+#/gps/pos/halfz 10.3 cm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 84 218 0  0
+#Pb-210
+/gps/position 0 -2.5 0 cm
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/radius 4.66 cm
+/gps/pos/halfz 10.3 cm
+/gps/pos/rot1 1 0 0 
+/gps/pos/rot2 0 1 0 
+/gps/energy 0 keV
+/gps/particle ion 
+/gps/ion 82 210 0  0
+#########################
+/run/beamOn 500000
+
+
+
+
+
+
+
+
+
+
+#Cs-137
+#/gun/particle ion
+#/gun/ion 55 137
+#
+#Cd-109
+#/gun/particle ion
+#/gun/ion 48 109
+#
+#Ba-133
+#/gun/particle ion
+#/gun/ion 56 133
+#
+#Am-241
+#/gun/particle ion
+#/gun/ion 95 241
+#
+
+#
+#/tracking/verbose 2
+#/run/beamOn 1
+#
+#/tracking/verbose 0
+#
+#/analysis/setFileName Co60
+#/analysis/h1/set 1  150  0. 1500 keV	#e+ e-
+#/analysis/h1/set 2  150  0. 1500 keV	#neutrino
+#/analysis/h1/set 3  150  0. 1500 keV	#gamma
+#/analysis/h1/set 6  100  0. 2500 keV	#EkinTot (Q)
+#/analysis/h1/set 7  150  0. 15e3 keV	#P balance
+#/analysis/h1/set 8  100  0. 100. year	#time of life
+#
+#/rdecay01/event/printModulo 100000
+# 
+#/run/beamOn 2000
+
+

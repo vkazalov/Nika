@@ -1,0 +1,211 @@
+CaC2014_phys(0),CaC2014_log(0),CaC2015_phys(0),CaC2015_log(0),
+CaCO3N7_phys(0),CaCO3N7_log(0),CaCO3N10_phys(0),CaCO3N10_log(0),
+CaCO3N36_phys(0),CaCO3N36_log(0), CaCO3N81_phys(0),CaCO3N81_log(0),
+CaCO3N61_phys(0),CaCO3N61_log(0),MoO3N6_phys(0),MoO3N6_log(0),
+MoO3N65_phys(0),MoO3N65_log(0),CaFormN5_phys(0),CaFormN5_log(0),
+MoO3ECP_phys(0),MoO3ECP_log(0),MoO3ECP2_phys(0),MoO3ECP2_log(0)
+
+G4LogicalVolume* CaC2014_log;
+	G4LogicalVolume* CaC2015_log;
+	G4LogicalVolume* CaCO3N7_log;
+	G4LogicalVolume* CaCO3N10_log;
+	G4LogicalVolume* CaCO3N36_log;
+	G4LogicalVolume* CaCO3N81_log;
+	G4LogicalVolume* CaCO3N61_log;
+	G4LogicalVolume* MoO3N6_log;
+	G4LogicalVolume* MoO3N65_log;
+	G4LogicalVolume* CaFormN5_log;
+	G4LogicalVolume* MoO3ECP_log;
+	G4LogicalVolume* MoO3ECP2_log;
+	
+	
+	
+	G4VPhysicalVolume* CaC2014_phys;
+	G4VPhysicalVolume* CaC2015_phys;
+	G4VPhysicalVolume* CaCO3N7_phys;
+	G4VPhysicalVolume* CaCO3N10_phys;
+	G4VPhysicalVolume* CaCO3N36_phys;
+	G4VPhysicalVolume* CaCO3N81_phys;
+	G4VPhysicalVolume* CaCO3N61_phys;
+	G4VPhysicalVolume* MoO3N6_phys;
+	G4VPhysicalVolume* MoO3N65_phys;
+	G4VPhysicalVolume* CaFormN5_phys;
+	G4VPhysicalVolume* MoO3ECP_phys;
+	G4VPhysicalVolume* MoO3ECP2_phys;
+
+
+
+//volume of CaCarb  2014 Purif
+		/*G4double innerRadiusCaC2014 = 45.1*mm;
+		G4double outerRadiusCaC2014 = 60.*mm;
+		G4double hightCaC2014 = 30*mm;
+		G4double startAngleCaC2014 = 0.*deg;
+		G4double spanningAngleCaC2014 = 360.*deg;
+		G4Tubs* CaC2014 = new G4Tubs("CaC2014",innerRadiusCaC2014,outerRadiusCaC2014,hightCaC2014,startAngleCaC2014,spanningAngleCaC2014);  
+		
+		CaC2014_log = new G4LogicalVolume(CaC2014,CaCarb,"CaC2014",0,0,0);		
+		G4double CaC2014_Pos_x = 0.*mm;
+		G4double CaC2014_Pos_y = 0.*mm;
+		G4double CaC2014_Pos_z = 19.45*mm;
+		CaC2014_phys = new G4PVPlacement(0,G4ThreeVector(CaC2014_Pos_x,CaC2014_Pos_y,CaC2014_Pos_z),CaC2014_log,"CaC2014",world_log,false,0);*/
+		
+		//volume of CaCarb  2015 Purif
+		/*G4double innerRadiusCaC2015 = 45.1*mm;
+		G4double outerRadiusCaC2015 = 70.*mm;
+		G4double hightCaC2015 = 30*mm;
+		G4double startAngleCaC2015 = 0.*deg;
+		G4double spanningAngleCaC2015 = 360.*deg;
+		G4Tubs* CaC2015 = new G4Tubs("CaC2015",innerRadiusCaC2015,outerRadiusCaC2015,hightCaC2015,startAngleCaC2015,spanningAngleCaC2015);  
+		
+		CaC2015_log = new G4LogicalVolume(CaC2015,CaCarb,"CaC2015",0,0,0);		
+		G4double CaC2015_Pos_x = 0.*mm;
+		G4double CaC2015_Pos_y = 0.*mm;
+		G4double CaC2015_Pos_z = 19.45*mm;
+		CaC2015_phys = new G4PVPlacement(0,G4ThreeVector(CaC2015_Pos_x,CaC2015_Pos_y,CaC2015_Pos_z),CaC2015_log,"CaC2015",world_log,false,0);*/
+		
+		//volume of CaCarbN7_2009
+		/*G4double innerRadiusCaCO3N7 = 0.*mm;
+		G4double outerRadiusCaCO3N7 = 26.*mm;
+		G4double hightCaCO3N7 = 13.5*mm;
+		G4double startAngleCaCO3N7 = 0.*deg;
+		G4double spanningAngleCaCO3N7 = 360.*deg;
+		G4Tubs* CaCO3N7 = new G4Tubs("CaCO3N7",innerRadiusCaCO3N7,outerRadiusCaCO3N7,hightCaCO3N7,startAngleCaCO3N7,spanningAngleCaCO3N7);  
+		
+		CaCO3N7_log = new G4LogicalVolume(CaCO3N7,CaCarb,"CaCO3N7",0,0,0);		
+		G4double CaCO3N7_Pos_x = 0.0*mm;
+		G4double CaCO3N7_Pos_y = 58.6*mm;//71.1
+		G4double CaCO3N7_Pos_z = 26*mm;//39.8
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		CaCO3N7_phys = new G4PVPlacement(rot1,G4ThreeVector(CaCO3N7_Pos_x,CaCO3N7_Pos_y,CaCO3N7_Pos_z),CaCO3N7_log,"CaCO3N7",world_log,false,0);*/
+		
+		
+		///volume of CaCO3Carb_PrtN10  
+		/*G4double CaCO3N10_x = 50.0*mm;
+		G4double CaCO3N10_y = 50.0*mm;
+		G4double CaCO3N10_z = 7.5*mm;
+		G4Box* CaCO3N10= new G4Box("CaCO3N10",CaCO3N10_x,CaCO3N10_y,CaCO3N10_z);
+		CaCO3N10_log = new G4LogicalVolume(CaCO3N10,CaCarb,"CaCO3N10",0,0,0);
+		G4double CaCO3N10_Pos_x = 0.*mm;
+		G4double CaCO3N10_Pos_y = 53.5*mm;
+		G4double CaCO3N10_Pos_z = 8.9*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		CaCO3N10_phys = new G4PVPlacement(rot1,G4ThreeVector(CaCO3N10_Pos_x,CaCO3N10_Pos_y,CaCO3N10_Pos_z),CaCO3N10_log,"CaCO3N10",world_log,false,0);*/
+		
+		
+		///volume of CaCO3Carb_PrtN36  
+		/*G4double CaCO3N36_x = 30.0*mm;
+		G4double CaCO3N36_y = 30.0*mm;
+		G4double CaCO3N36_z = 7.5*mm;
+		G4Box* CaCO3N36= new G4Box("CaCO3N36",CaCO3N36_x,CaCO3N36_y,CaCO3N36_z);
+		CaCO3N36_log = new G4LogicalVolume(CaCO3N36,CaCarb,"CaCO3N36",0,0,0);
+		G4double CaCO3N36_Pos_x = 0.*mm;
+		G4double CaCO3N36_Pos_y = 53.5*mm;
+		G4double CaCO3N36_Pos_z = 19.45*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		CaCO3N36_phys = new G4PVPlacement(rot1,G4ThreeVector(CaCO3N36_Pos_x,CaCO3N36_Pos_y,CaCO3N36_Pos_z),CaCO3N36_log,"CaCO3N36",world_log,false,0);*/
+		
+		
+		///volume of CaCO3Carb_PrtN81  
+		/*G4double CaCO3N81_x = 45.0*mm;
+		G4double CaCO3N81_y = 45.0*mm;
+		G4double CaCO3N81_z = 11.5*mm;
+		G4Box* CaCO3N81= new G4Box("CaCO3N81",CaCO3N81_x,CaCO3N81_y,CaCO3N81_z);
+		CaCO3N81_log = new G4LogicalVolume(CaCO3N81,CaCarb,"CaCO3N81",0,0,0);
+		G4double CaCO3N81_Pos_x = 0.*mm;
+		G4double CaCO3N81_Pos_y = 57.5*mm;
+		G4double CaCO3N81_Pos_z = 11.95*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		CaCO3N81_phys = new G4PVPlacement(rot1,G4ThreeVector(CaCO3N81_Pos_x,CaCO3N81_Pos_y,CaCO3N81_Pos_z),CaCO3N81_log,"CaCO3N81",world_log,false,0);*/
+		
+		///volume of CaCO3Carb_PrtN61  
+		/*G4double CaCO3N61_x = 45.0*mm;
+		G4double CaCO3N61_y = 37.5*mm;
+		G4double CaCO3N61_z = 7.5*mm;
+		G4Box* CaCO3N61= new G4Box("CaCO3N61",CaCO3N61_x,CaCO3N61_y,CaCO3N61_z);
+		CaCO3N61_log = new G4LogicalVolume(CaCO3N61,CaCarb,"CaCO3N61",0,0,0);
+		G4double CaCO3N61_Pos_x = 0.*mm;
+		G4double CaCO3N61_Pos_y = 53.5*mm;
+		G4double CaCO3N61_Pos_z = 15.7*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		CaCO3N61_phys = new G4PVPlacement(rot1,G4ThreeVector(CaCO3N61_Pos_x,CaCO3N61_Pos_y,CaCO3N61_Pos_z),CaCO3N61_log,"CaCO3N61",world_log,false,0);*/
+		
+		///volume of MoO3_PrtN6  
+		/*G4double MoO3N6_x = 57.5*mm;
+		G4double MoO3N6_y = 50.0*mm;
+		G4double MoO3N6_z = 5.*mm;
+		G4Box* MoO3N6= new G4Box("MoO3N6",MoO3N6_x,MoO3N6_y,MoO3N6_z);
+		MoO3N6_log = new G4LogicalVolume(MoO3N6,MoliOx,"MoO3N6",0,0,0);
+		G4double MoO3N6_Pos_x = 0.*mm;
+		G4double MoO3N6_Pos_y = 50.7*mm;
+		G4double MoO3N6_Pos_z = 5.7*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(90.*deg);
+		MoO3N6_phys = new G4PVPlacement(rot1,G4ThreeVector(MoO3N6_Pos_x,MoO3N6_Pos_y,MoO3N6_Pos_z),MoO3N6_log,"MoO3N6",world_log,false,0);*/
+		
+		//volume of CaFormN5
+		/*G4double innerRadiusCaFormN5 = 45.*mm;
+		G4double outerRadiusCaFormN5 = 58.*mm;
+		G4double hightCaFormN5 = 45.*mm;
+		G4double startAngleCaFormN5 = 0.*deg;
+		G4double spanningAngleCaFormN5 = 360.*deg;
+		G4Tubs* CaFormN5 = new G4Tubs("CaFormN5",innerRadiusCaFormN5,outerRadiusCaFormN5,hightCaFormN5,startAngleCaFormN5,spanningAngleCaFormN5);  
+		
+		CaFormN5_log = new G4LogicalVolume(CaFormN5,CaForm,"CaFormN5",0,0,0);		
+		G4double CaFormN5_Pos_x = 0.*mm;
+		G4double CaFormN5_Pos_y = 0.*mm;
+		G4double CaFormN5_Pos_z = 8.9*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(0.*deg);
+		CaFormN5_phys = new G4PVPlacement(rot1,G4ThreeVector(CaFormN5_Pos_x,CaFormN5_Pos_y,CaFormN5_Pos_z),CaFormN5_log,"CaFormN5",world_log,false,0);*/
+		
+		///volume of MoO3_PrtN65  
+		/*G4double innerRadiusMoO3N65 = 45.*mm;
+		G4double outerRadiusMoO3N65 = 65.*mm;
+		G4double hightMoO3N65 = 45.*mm;
+		G4double startAngleMoO3N65 = 0.*deg;
+		G4double spanningAngleMoO3N65 = 360.*deg;
+		G4Tubs* MoO3N65 = new G4Tubs("MoO3N65",innerRadiusMoO3N65,outerRadiusMoO3N65,hightMoO3N65,startAngleMoO3N65,spanningAngleMoO3N65);  
+		
+		MoO3N65_log = new G4LogicalVolume(MoO3N65,MoliOx,"MoO3N65",0,0,0);		
+		G4double MoO3N65_Pos_x = 0.*mm;
+		G4double MoO3N65_Pos_y = 0.*mm;
+		G4double MoO3N65_Pos_z = 8.9*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(0.*deg);
+		MoO3N65_phys = new G4PVPlacement(rot1,G4ThreeVector(MoO3N65_Pos_x,MoO3N65_Pos_y,MoO3N65_Pos_z),MoO3N65_log,"MoO3N65",world_log,false,0);*/
+		
+		///volume of MoO3_N1_.ECP
+		//G4double innerRadiusMoO3ECP = 45.*mm;
+		//G4double outerRadiusMoO3ECP = 75.*mm;
+		//G4double hightMoO3ECP = 15.*mm;
+		//G4double startAngleMoO3ECP = 0.*deg;
+		//G4double spanningAngleMoO3ECP = 360.*deg;
+		//G4Tubs* MoO3ECP = new G4Tubs("MoO3ECP",innerRadiusMoO3ECP,outerRadiusMoO3ECP,hightMoO3ECP,startAngleMoO3ECP,spanningAngleMoO3ECP);
+		
+		/*G4Torus* MoO3ECP = new G4Torus("MoO3ECP",0.,15.,60.,0.,360.);  
+		
+		MoO3ECP_log = new G4LogicalVolume(MoO3ECP,MoliOx,"MoO3ECP",0,0,0);		
+		G4double MoO3ECP_Pos_x = 0.*mm;
+		G4double MoO3ECP_Pos_y = 0.*mm;
+		G4double MoO3ECP_Pos_z = 37.8*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(0.*deg);
+		MoO3ECP_phys = new G4PVPlacement(rot1,G4ThreeVector(MoO3ECP_Pos_x,MoO3ECP_Pos_y,MoO3ECP_Pos_z),MoO3ECP_log,"MoO3ECP",world_log,false,0);*/
+		
+		///volume of MoO3_N2_.ECP 
+		/*G4double MoO3ECP2_x = 60.*mm;
+		G4double MoO3ECP2_y = 60.*mm;
+		G4double MoO3ECP2_z = 4.45*mm;
+		G4Box* MoO3ECP2= new G4Box("MoO3ECP2",MoO3ECP2_x,MoO3ECP2_y,MoO3ECP2_z);
+		MoO3ECP2_log = new G4LogicalVolume(MoO3ECP2,MoliOx,"MoO3ECP2",0,0,0);
+		G4double MoO3ECP2_Pos_x = 0.*mm;
+		G4double MoO3ECP2_Pos_y = 0*mm;
+		G4double MoO3ECP2_Pos_z = 49.35*mm;
+		G4RotationMatrix* rot1 = new G4RotationMatrix();
+		rot1->rotateX(0.*deg);
+		MoO3ECP2_phys = new G4PVPlacement(rot1,G4ThreeVector(MoO3ECP2_Pos_x,MoO3ECP2_Pos_y,MoO3ECP2_Pos_z),MoO3ECP2_log,"MoO3ECP2",world_log,false,0);*/

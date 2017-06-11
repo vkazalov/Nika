@@ -1,0 +1,12 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="109" xOffset="0" scrollWidth="1848" startPos="3244" endPos="3515" selMode="0" lang="C++" encoding="-1" filename="d:\AMoRE\NIKAt\nika-b\Debug\vis2.mac" />
+            <File firstVisibleLine="253" xOffset="0" scrollWidth="1848" startPos="5729" endPos="5729" selMode="0" lang="C++" encoding="-1" filename="d:\AMoRE\NIKAt\nika-b\Debug\vis4.mac" />
+            <File firstVisibleLine="51" xOffset="0" scrollWidth="1848" startPos="1928" endPos="1928" selMode="0" lang="C++" encoding="-1" filename="D:\AMoRE\NIKAt\nika\mainNIKA.cc" />
+            <File firstVisibleLine="351" xOffset="0" scrollWidth="1848" startPos="15844" endPos="15844" selMode="0" lang="C++" encoding="-1" filename="D:\AMoRE\NIKAt\nika\src\DetConstr.cc" />
+            <File firstVisibleLine="39" xOffset="0" scrollWidth="1848" startPos="1137" endPos="1137" selMode="0" lang="C++" encoding="-1" filename="D:\AMoRE\NIKAt\nika\include\DetConstr.hh" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
